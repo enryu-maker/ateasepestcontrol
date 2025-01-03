@@ -1,7 +1,8 @@
-import React from 'react'
-import { Images } from '../assets/images'
+import React from 'react';
+import { Images } from '../assets/images';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 export default function Reviews() {
     const reviews = [
         {
@@ -27,13 +28,13 @@ export default function Reviews() {
             name: "Calvin Coaker",
             daysAgo: "21 days ago",
             comment:
-                "At Ease pest control did a amazing job handling our insect problems in a very timely professional manner. They made the experience very easy and we highly recomend them as they did a great hov.",
+                "At Ease pest control did a amazing job handling our insect problems in a very timely professional manner. They made the experience very easy and we highly recommend them as they did a great job.",
             initial: "CC",
             rating: "★★★★★"
         },
         {
             id: 4,
-            name: "gemma borg",
+            name: "Gemma Borg",
             daysAgo: "21 days ago",
             comment:
                 "Jeff, Zac, and the team are a pleasure to work with. They are professional and are quick to help.",
@@ -75,37 +76,42 @@ export default function Reviews() {
             rating: "★★★★★"
         },
     ];
+
     const customArrowRight = (onClickHandler, hasNext) => (
         hasNext && (
             <button
                 onClick={onClickHandler}
-                className="absolute bottom-1 right-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
+                className="absolute hidden md:flex top-1/2 right-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
                 style={{ zIndex: 10 }}
+                aria-label="Next review"
             >
-                &#8594; {/* You can replace this with an icon */}
+                &#8594;
             </button>
         )
     );
+
     const customArrowLeft = (onClickHandler, hasPrev) => (
         hasPrev && (
             <button
                 onClick={onClickHandler}
-                className="absolute bottom-1 left-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
+                className="absolute hidden md:flex top-1/2 left-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
                 style={{ zIndex: 10 }}
+                aria-label="Previous review"
             >
-                &#8592; {/* You can replace this with an icon */}
+                &#8592;
             </button>
         )
     );
+
     return (
         <div
-            className="w-full h-[50vh] bg-gray-100 bg-cover font-Poppins bg-center bg-no-repeat"
+            className="w-screen h-[50vh] bg-gray-100 bg-cover font-Poppins bg-center bg-no-repeat"
             style={{
-                backgroundImage: `url(${Images.reviews}`
+                backgroundImage: `url(${Images.reviews})`, // Fixed URL formatting
             }}
         >
             <div className="flex justify-center items-center h-full w-full bg-black/50 text-white font-semibold text-lg">
-                <div className="max-w-4xl mx-auto">
+                <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
                     <Carousel
                         showArrows
                         infiniteLoop
@@ -117,27 +123,36 @@ export default function Reviews() {
                         renderArrowNext={(onClickHandler, hasNext) =>
                             customArrowRight(onClickHandler, hasNext)
                         }
-                        renderArrowPrev={(onClickHandler, hasNext) =>
-                            customArrowLeft(onClickHandler, hasNext)
+                        renderArrowPrev={(onClickHandler, hasPrev) =>
+                            customArrowLeft(onClickHandler, hasPrev)
                         }
                     >
                         {reviews.map((review) => (
                             <div
                                 key={review.id}
-                                className="bg-transparent p-6 rounded-lg flex flex-col justify-center items-center space-y-2"
+                                className="bg-transparent p-6 w-full rounded-lg flex flex-col justify-center items-center space-y-4"
                             >
-                                <div className="bg-primary h-[60px] w-[60px] rounded-full flex items-center justify-center">
+                                {/* Initials */}
+                                <div className="bg-primary h-[60px] w-[60px] rounded-full flex items-center justify-center text-white font-bold text-xl">
                                     {review.initial}
                                 </div>
-                                <p className="mt-4 font-bold text-yellow-500">{review.rating}</p>
+
+                                {/* Rating */}
+                                <p className="mt-4 font-bold text-yellow-500 text-lg sm:text-xl">{review.rating}</p>
+
+                                {/* Days ago */}
                                 <p className="text-sm text-white">{review.daysAgo}</p>
-                                <p className="mt-4 text-white text-base font-light text-center">{review.comment}</p>
-                                <h3 className="text-2xl font-semibold capitalize mb-2 ">{review.name}</h3>
+
+                                {/* Comment */}
+                                <p className="mt-4 text-white w-[92%] md:w-full text-xs md:text-base font-light text-center">{review.comment}</p>
+
+                                {/* Reviewer Name */}
+                                <h3 className="text-2xl font-semibold capitalize mb-2 text-center">{review.name}</h3>
                             </div>
                         ))}
                     </Carousel>
                 </div>
             </div>
         </div>
-    )
+    );
 }

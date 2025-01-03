@@ -7,9 +7,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
     return (
-        <div className='h-[50vh] w-full flex flex-col justify-evenly space-y-3 font-Poppins items-center'>
-            <div className="w-[88%] flex justify-evenly items-start">
-                <div className="flex flex-col h-[80%] w-[25%]  justify-center  space-y-1 items-center">
+        <div className='md:h-[50vh] w-full flex flex-col justify-evenly space-y-3 font-Poppins items-center'>
+            <div className="w-[88%] flex h-auto flex-col space-y-2 md:flex-row justify-evenly md:items-start">
+                <div className="flex flex-col md:w-[25%]   md:justify-center  space-y-1 items-center">
                     <div className="flex flex-row   justify-center  items-center">
                         <img src={Images.logo} alt="logo" className='w-[70px]  h-[70px]' />
                         <img src={Images.wordmark} alt="logo" className=" h-auto w-[100px] " />
@@ -18,7 +18,7 @@ export default function Footer() {
                         <FaFacebook className="text-blue-500 text-2xl" />
                     </div>
                 </div>
-                <div className="flex flex-col h-[80%] w-[25%]  space-y-1 items-start">
+                <div className="flex flex-col h-[80%] md:w-[25%]  space-y-1 items-start">
                     <Link className=' font-semibold uppercase text-xl text-start text-black'>
                         Quick Links
                     </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
                     </Link>
                 </div>
-                <div className="flex flex-col h-[80%] w-[25%]  space-y-1 items-start">
+                <div className="flex flex-col h-[80%] md:w-[25%]  space-y-1 items-start">
                     <h1 className=' font-semibold text-xl uppercase text-black'>
                         Services
                     </h1>
@@ -58,7 +58,7 @@ export default function Footer() {
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
                     </Link>
                 </div>
-                <div className="flex flex-col h-[80%] w-[25%]  space-y-2 items-start">
+                <div className="flex flex-col h-[80%] md:w-[25%]  space-y-2 items-start">
                     <h1 className=' font-semibold text-xl uppercase text-black'>
                         Contact Info
                     </h1>
@@ -104,12 +104,12 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="w-[78%]  flex justify-between items-center">
+            <div className="md:w-[78%] w-[88%] py-4  flex flex-col md:flex-row justify-between items-start md:items-center">
                 <p className='  font-normal text-gray-500'>
                     © 2021 At Ease Pest Control. All Rights Reserved.
                 </p>
-                <p className='  font-normal text-gray-500'>
-                    Made with ❤️ by <a href='https://www.nerdtech.in' className='text-primary italic cursor-pointer group transition duration-300'>nerdtech.<span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary font-medium"></span></a>
+                <p className='font-normal text-gray-500'>
+                    Made with ❤️ by <a href='https://www.nerdtech.in' className='text-primary italic cursor-pointer group transition duration-300'>nerdtech LLC.<span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary font-medium"></span></a>
                 </p>
             </div>
         </div>
