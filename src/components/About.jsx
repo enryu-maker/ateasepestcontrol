@@ -38,7 +38,7 @@ export default function About() {
                     </button>
                 </div>
             </div>
-            <div className="flex flex-col items-center pt-4 md:mt-0  space-x-2 relative w-full md:h-[50vh] justify-center ">
+            <div className="flex flex-col items-center pt-4 md:mt-0  space-x-2 relative md:h-[50vh] justify-center ">
                 <p className=' font-regular text-[14px] uppercase text-primary text-start md:text-center'>
                     Why you should choose us?
                 </p>
