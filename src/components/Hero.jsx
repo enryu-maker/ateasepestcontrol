@@ -46,6 +46,8 @@ export default function Hero() {
             >
                 <img src={Images.C1} className='w-screen md:h-[80vh] object-cover' alt="carousel" />
                 <img src={Images.C2} className='w-screen md:h-[80vh] object-cover' alt="carousel" />
+                <img src={Images.C3} className='w-screen md:h-[80vh] object-cover' alt="carousel" />
+
             </Carousel>
         </div>
     )

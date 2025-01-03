@@ -63,6 +63,7 @@ export default function Service() {
                         showThumbs={false}
                         showIndicators={false}
                         showArrows={true}
+                        swipeable={false}
                         interval={5000}
                         emulateTouch
                         className=' bg-transparent w-[88%] mx-auto h-auto '
