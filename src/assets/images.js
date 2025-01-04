@@ -18,4 +18,6 @@ export const Images = {
     contact: require("./Images/contact.png"),
     about: require("./Images/about.png"),
     ant: require("./Images/ant.png"),
+    Locations: require("./Images/Locations.png"),
+
 }

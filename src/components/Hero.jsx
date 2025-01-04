@@ -7,7 +7,7 @@ export default function Hero() {
         hasNext && (
             <button
                 onClick={onClickHandler}
-                className="absolute bottom-1 right-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
+                className="absolute hidden md:flex justify-center items-center top-1/2 right-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
                 style={{ zIndex: 10 }}
             >
                 &#8594; {/* You can replace this with an icon */}
@@ -18,7 +18,7 @@ export default function Hero() {
         hasPrev && (
             <button
                 onClick={onClickHandler}
-                className="absolute bottom-1 left-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
+                className="absolute hidden md:flex justify-center items-center top-1/2 left-4 transform -translate-y-1/2 bg-primary text-white h-[40px] w-[40px] rounded-full shadow-md hover:bg-opacity-80"
                 style={{ zIndex: 10 }}
             >
                 &#8592; {/* You can replace this with an icon */}
@@ -44,9 +44,9 @@ export default function Hero() {
                     customArrowLeft(onClickHandler, hasNext)
                 }
             >
-                <img src={Images.C1} className='w-screen md:h-[85vh] object-cover' alt="carousel" />
-                <img src={Images.C2} className='w-screen md:h-[85vh] object-cover' alt="carousel" />
-                <img src={Images.C3} className='w-screen md:h-[85vh] object-cover' alt="carousel" />
+                <img src={Images.C1} className='w-screen md:h-[90vh] object-cover' alt="carousel" />
+                <img src={Images.C2} className='w-screen md:h-[90vh] object-cover' alt="carousel" />
+                <img src={Images.C3} className='w-screen md:h-[90vh] object-cover' alt="carousel" />
 
             </Carousel>
         </div>
