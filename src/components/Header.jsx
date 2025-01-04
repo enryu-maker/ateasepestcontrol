@@ -31,7 +31,7 @@ export default function Header() {
     };
     return (
         <>
-            <div className="h-[70px] hidden w-full sticky top-0 z-50  bg-white font-Poppins md:flex items-center justify-between px-20">
+            <div className="h-[70px] hidden w-full fixed top-0 z-50  bg-white font-Poppins md:flex items-center justify-between px-20">
                 <div className="text-primary text-2xl flex items-center space-x-2">
                     <img src={Images.logo} alt="logo" className='w-[70px] h-[70px]' />
                     <img src={Images.wordmark} alt="logo" className=" h-auto w-[140px]" />
@@ -79,7 +79,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="h-[55px] w-full hidden sticky top-[70px] z-50 font-Poppins uppercase text-sm bg-gray-50 md:flex justify-evenly items-center">
+            <div className="h-[55px] w-full hidden sticky top-[70px] z-40 font-Poppins uppercase text-sm bg-gray-50 md:flex justify-evenly items-center">
                 <button
                     className=' bg-transparent uppercase text-transparent px-8 py-2 rounded-full'
                 >
@@ -105,7 +105,7 @@ export default function Header() {
                     Call Now
                 </button>
             </div>
-            <div className="h-[70px] md:hidden bg-white px-4 w-screen sticky top-0 z-50   font-Poppins flex items-center justify-between ">
+            <div className="h-[70px] md:hidden bg-white px-4 w-screen fixed top-0 z-50   font-Poppins flex items-center justify-between ">
                 <div className="text-primary text-2xl flex items-center space-x-2">
                     <img src={Images.logo} alt="logo" className='w-[70px] h-[70px]' />
                 </div>

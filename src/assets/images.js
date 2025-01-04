@@ -15,5 +15,7 @@ export const Images = {
     bed: require("./Images/bed.png"),
     eco: require("./Images/eco.png"),
     work: require("./Images/work.png"),
-
+    contact: require("./Images/contact.png"),
+    about: require("./Images/about.png"),
+    ant: require("./Images/ant.png"),
 }

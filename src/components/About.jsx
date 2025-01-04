@@ -8,7 +8,11 @@ import { MdPestControl } from "react-icons/md";
 import { Images } from '../assets/images';
 export default function About() {
     return (
-        <div name="about" className="w-full h-auto md:h-screen flex flex-col justify-center items-center space-y-1 py-5 font-Poppins bg-gray-50">
+        <div name="about" className="w-full h-auto md:h-screen flex flex-col justify-center items-center space-y-1 py-5 font-Poppins bg-gray-50"
+            style={{
+                backgroundImage: `url(${Images.about})`, // Fixed URL formatting
+            }}
+        >
             <div className="flex flex-col md:flex-row items-center  space-x-2 relative w-full h-auto md:h-[50vh] justify-center ">
                 <div className="h-full w-full hidden   md:w-[50%] px-10 md:flex justify-center items-center">
                     {/* 3 box differnt size overlatping each other */}
