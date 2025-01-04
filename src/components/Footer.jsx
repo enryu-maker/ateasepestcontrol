@@ -35,6 +35,9 @@ export default function Footer() {
                     <Link to='service' duration={500} smooth={true} className="text-black font-normal cursor-pointer group transition duration-300">Services
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
                     </Link>
+                    <Link to='location' duration={500} smooth={true} className="text-black font-normal cursor-pointer group transition duration-300">Location
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
+                    </Link>
                     <Link to='contact' duration={500} smooth={true} className="text-black font-normal cursor-pointer group transition duration-300">Contact Us
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
                     </Link>

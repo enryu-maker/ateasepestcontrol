@@ -4,6 +4,7 @@ import { Images } from "../assets/images";
 export default function Contact() {
     return (
         <div
+            name="contact"
             className="w-full min-h-screen bg-cover bg-center py-10 px-4 md:px-20 flex flex-col md:flex-row justify-around items-center font-Poppins bg-white"
             style={{
                 backgroundImage: `url(${Images.contact})`,

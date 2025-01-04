@@ -71,6 +71,7 @@ const counties = [
 export default function Location() {
     return (
         <div
+            name="location"
             className="w-full bg-cover bg-no-repeat flex flex-col py-6 md:py-16 justify-center items-center font-Poppins bg-white"
         >
             <div className="text-center mb-8">

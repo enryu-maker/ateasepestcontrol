@@ -8,6 +8,7 @@ export const Images = {
     C1: require("./Images/C1.png"),
     C2: require("./Images/C2.png"),
     C3: require("./Images/C3.png"),
+    C4: require("./Images/C4.png"),
     residential: require("./Images/residential.png"),
     commercial: require("./Images/commercial.png"),
     termite: require("./Images/termite.png"),
