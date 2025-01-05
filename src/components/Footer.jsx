@@ -18,7 +18,11 @@ export default function Footer() {
                         <img src={Images.logo} alt="logo" className='w-[70px]  h-[70px]' />
                         <img src={Images.wordmark} alt="logo" className=" h-auto w-[100px] " />
                     </div>
-                    <div className="bg-white h-[40px] w-[40px] self-center rounded-full flex items-center justify-center">
+                    <div
+                        onClick={() => {
+                            window.open('https://www.facebook.com/p/At-Ease-Pest-Control-100092306544751/', '_blank')
+                        }}
+                        className="bg-white h-[40px] w-[40px] self-center rounded-full flex items-center justify-center">
                         <FaFacebook className="text-blue-500 text-2xl" />
                     </div>
                 </div>
