@@ -54,7 +54,7 @@ export default function Service() {
                     Explore Our Services
                 </p>
                 <p className='font-regular text-[12px] self-center  w-[88%] md:w-[68%] text-black text-justify md:text-center'>
-                    AtEase Pest Control provides reliable and eco-friendly pest control solutions for homes and businesses. Our expert team efficiently handles pest infestations, from ants to rodents, using safe and effective methods. We ensure your space remains pest-free and comfortable, with a focus on customer satisfaction and long-term prevention.
+                    At Ease Pest Control provides reliable and eco-friendly pest control solutions for homes and businesses. Our expert team efficiently handles pest infestations, from ants to rodents, using safe and effective methods. We ensure your space remains pest-free and comfortable, with a focus on customer satisfaction and long-term prevention.
                 </p>
                 <div className=" w-full lg:w-[88%] mt-24 bg-transparent flex justify-center items-center  lg:mt-0">
                     <Carousel
@@ -92,10 +92,10 @@ export default function Service() {
 
                 </div>
                 <p className='font-regular text-[12px] w-[88%] md:w-[68%] self-center text-black text-center'>
-                    Don't hesitate contact us for help and service. <button className=' text-primary cursor-pointer group transition duration-300'>
+                    Don't hesitate contact us for help and service. <a href='tel:251-847-3226' className=' text-primary cursor-pointer group transition duration-300'>
                         contact now
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
-                    </button>
+                    </a>
                 </p>
             </div>
         </>

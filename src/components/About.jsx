@@ -6,6 +6,7 @@ import { RiServiceLine } from "react-icons/ri";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdPestControl } from "react-icons/md";
 import { Images } from '../assets/images';
+import { Link } from 'react-scroll';
 export default function About() {
     return (
         <div name="about" className="w-full h-auto md:h-screen flex flex-col justify-center items-center space-y-1 py-5 font-Poppins bg-gray-50"
@@ -33,13 +34,16 @@ export default function About() {
                         Welcome to <br /> At Ease Pest Control
                     </p>
                     <p className='font-regular text-[12px] self-center  md:self-start w-[88%] md:w-[68%] text-black text-justify'>
-                        At Ease Pest Control, we are your trusted partner in providing effective, eco-friendly pest management solutions. We specialize in eliminating pests safely and efficiently, ensuring your home or business remains pest-free. Our team of qualified experts is dedicated to delivering fast, reliable, and affordable services tailored to meet your unique needs. Whether it's preventative treatments or immediate pest control solutions, we're here to help you maintain a comfortable and safe environment. Trust At Ease Pest Control—where peace of mind comes naturally.
+                        we are your trusted partner in providing effective, eco-friendly pest management solutions. We specialize in eliminating pests safely and efficiently, ensuring your home or business remains pest-free. Our team of qualified experts is dedicated to delivering fast, reliable, and affordable services tailored to meet your unique needs. Whether it's preventative treatments or immediate pest control solutions, we're here to help you maintain a comfortable and safe environment. Trust At Ease Pest Control—where peace of mind comes naturally.
                     </p>
-                    <button
-                        className='bg-primary uppercase w-[150px] md:w-auto md:self-start self-center text-white md:px-8 py-2 rounded-full'
+                    <Link
+                        to='contact'
+                        duration={500}
+                        smooth={true}
+                        className='bg-primary uppercase w-[150px] cursor-pointer md:w-auto md:self-start self-center text-white md:px-8 py-2 rounded-full'
                     >
                         Know More
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="flex flex-col items-center pt-4 md:mt-0  space-x-2 relative md:h-[50vh] justify-center ">
@@ -66,7 +70,7 @@ export default function About() {
                             <AiFillSchedule className="text-white text-3xl group-hover:text-primary transition-all duration-300" />
                         </div>
                         <p className="font-regular text-base text-center group-hover:text-white transition-all duration-300">
-                            Service On <br /> Schedule
+                            Service On <br /> a Schedule
                         </p>
                     </div>
 

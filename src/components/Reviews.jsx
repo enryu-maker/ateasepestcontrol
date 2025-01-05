@@ -33,15 +33,6 @@ export default function Reviews() {
             rating: "★★★★★"
         },
         {
-            id: 4,
-            name: "Gemma Borg",
-            daysAgo: "21 days ago",
-            comment:
-                "Jeff, Zac, and the team are a pleasure to work with. They are professional and are quick to help.",
-            initial: "GB",
-            rating: "★★★★★"
-        },
-        {
             id: 5,
             name: "Larry Hubbard",
             daysAgo: "1 month ago",

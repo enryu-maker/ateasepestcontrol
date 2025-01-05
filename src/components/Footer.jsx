@@ -78,7 +78,7 @@ export default function Footer() {
                                 Call Us Now!
                             </p>
                             <a href='tel:0251-847-3226' className=' font-medium text-sm'>
-                                0251-847-3226
+                                251-847-3226
                             </a>
                         </div>
                     </div>

@@ -63,7 +63,7 @@ const counties = [
             "Thomasville",
             "Coffeeville"
         ],
-        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211832.08842116685!2d-83.55393494874474!3d33.94430743964605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f67369c3e5a9a5%3A0x281bbc3db2a4ca0a!2sClarke%20County%2C%20GA%2C%20USA!5e0!3m2!1sen!2sin!4v1735987424653!5m2!1sen!2sin'
+        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870072.3015843914!2d-88.50030253199937!3d31.586727323072058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889acbb92d929c41%3A0xe4f767c8921028cb!2sClarke%20County%2C%20AL%2C%20USA!5e0!3m2!1sen!2sin!4v1736089422187!5m2!1sen!2sin'
     },
     // Add more counties here with their corresponding map URLs
 ];

@@ -1,7 +1,35 @@
 import React from "react";
 import { Images } from "../assets/images";
+import axios from "axios";
 
 export default function Contact() {
+    const [data, setData] = React.useState({
+        name: "",
+        email: "",
+        number: "",
+        subject: "",
+        message: "",
+    });
+    const sentMessage = async (data) => {
+        console.log(data)
+        try {
+            const response = await axios.post(
+                "https://formspree.io/f/xqaagdpg",
+                { ...data } // Spread operator creates a new, clean object
+            );
+            alert("Message Sent Successfully");
+            setData({
+                name: "",
+                email: "",
+                number: "",
+                subject: "",
+                message: "",
+            });
+        } catch (error) {
+            console.error(error);
+            alert("Message Not Sent");
+        }
+    };
     return (
         <div
             name="contact"
@@ -18,16 +46,20 @@ export default function Contact() {
                 <p className="text-[12px] md:text-[14px] uppercase font-regular text-white">
                     Complete the form below and we'll get back to you as soon as possible.
                 </p>
-                <form className="space-y-6 mt-4">
+                <div className="space-y-6 mt-4">
                     {/* Name and Email */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <input
                             type="text"
+                            value={data.name}
+                            onChange={(e) => setData({ ...data, name: e.target.value })}
                             placeholder="Full name"
                             className="border border-gray-300 bg-white/80 rounded-lg p-3 text-black focus:outline-none"
                         />
                         <input
                             type="email"
+                            value={data.email}
+                            onChange={(e) => setData({ ...data, email: e.target.value })}
                             placeholder="Email"
                             className="border border-gray-300 bg-white/80 rounded-lg p-3 text-black focus:outline-none"
                         />
@@ -36,11 +68,15 @@ export default function Contact() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <input
                             type="tel"
+                            value={data.number}
+                            onChange={(e) => setData({ ...data, number: e.target.value })}
                             placeholder="Phone"
                             className="border border-gray-300 bg-white/80 rounded-lg p-3 text-black focus:outline-none"
                         />
                         <input
                             type="text"
+                            value={data.subject}
+                            onChange={(e) => setData({ ...data, subject: e.target.value })}
                             placeholder="Subject"
                             className="border border-gray-300 bg-white/80 rounded-lg p-3 text-black focus:outline-none"
                         />
@@ -48,20 +84,21 @@ export default function Contact() {
                     {/* Message */}
                     <textarea
                         rows="5"
+                        value={data.message}
+                        onChange={(e) => setData({ ...data, message: e.target.value })}
                         placeholder="Your message goes here..."
                         className="border w-full bg-white/80 border-gray-300 rounded-lg p-3 text-black focus:outline-none"
                     ></textarea>
                     {/* Submit Button */}
                     <button
-                        type="submit"
+                        onClick={() => sentMessage(data)}
                         className="bg-white text-primary py-2 px-6 rounded-lg  transition duration-300"
                     >
                         Send Message
                     </button>
-                </form>
+                </div>
             </div>
 
-            {/* Right Section - Placeholder for additional content */}
             <div className="w-full md:w-1/3 hidden md:flex justify-center items-center">
 
             </div>

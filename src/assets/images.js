@@ -11,7 +11,7 @@ export const Images = {
     C4: require("./Images/C4.png"),
     residential: require("./Images/residential.png"),
     commercial: require("./Images/commercial.png"),
-    termite: require("./Images/termite.png"),
+    termite: require("./Images/termite.jpg"),
     rodent: require("./Images/rodent.png"),
     bed: require("./Images/bed.png"),
     eco: require("./Images/eco.png"),

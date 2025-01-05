@@ -45,8 +45,8 @@ export default function Header() {
                             <p className=' font-light text-[10px] text-gray-500'>
                                 Call Us Now!
                             </p>
-                            <a href='tel:0251-847-3226' className=' font-medium text-sm'>
-                                0251-847-3226
+                            <a href='tel:251-847-3226' className=' font-medium text-sm'>
+                                251-847-3226
                             </a>
                         </div>
                     </div>
@@ -102,11 +102,9 @@ export default function Header() {
                         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary"></span>
                     </Link>
                 </div>
-                <button
-                    className='bg-primary uppercase text-white px-8 py-2 rounded-full'
-                >
+                <a href='tel:251-847-3226' className=' bg-primary uppercase text-white px-8 py-2 rounded-full'>
                     Call Now
-                </button>
+                </a>
             </div>
             <div className="h-[70px] md:hidden bg-white px-4 w-screen fixed top-0 z-50   font-Poppins flex items-center justify-between ">
                 <div className="text-primary text-2xl flex items-center space-x-2">
@@ -184,8 +182,8 @@ export default function Header() {
                             <p className=' font-light text-[10px] text-gray-500'>
                                 Call Us Now!
                             </p>
-                            <a href='tel:0251-847-3226' className=' font-medium text-sm'>
-                                0251-847-3226
+                            <a href='tel:251-847-3226' className=' font-medium text-sm'>
+                                251-847-3226
                             </a>
                         </div>
                     </div>

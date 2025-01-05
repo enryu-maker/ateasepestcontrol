@@ -1,5 +1,6 @@
 import React from "react";
 import { Images } from "../assets/images";
+import { Link } from "react-scroll";
 
 export default function Works() {
     return (
@@ -22,13 +23,16 @@ export default function Works() {
             {/* CTA Section */}
             <div className="h-auto w-[90%] sm:w-[80%] md:w-[70%] flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0 px-6 py-4 bg-primary rounded-lg shadow-lg">
                 <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-semibold text-white text-center md:text-left">
-                    Get started with AtEase Pest Control today
+                    Get started with At Ease Pest Control today
                 </p>
-                <button
-                    className="bg-white text-primary uppercase px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base md:text-lg rounded-full shadow-md hover:bg-gray-200 transition duration-300"
+                <Link
+                    to="contact"
+                    duration={500}
+                    smooth={true}
+                    className="bg-white text-primary cursor-pointer uppercase px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base md:text-lg rounded-full shadow-md hover:bg-gray-200 transition duration-300"
                 >
                     Book Now
-                </button>
+                </Link>
             </div>
         </div>
     );
