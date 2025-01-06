@@ -8,9 +8,6 @@ import { FaFacebook } from "react-icons/fa";
 export default function Footer() {
     return (
         <div className='md:h-[50vh] w-full flex flex-col bg-contain bg-no-repeat justify-evenly space-y-3 font-Poppins items-center'
-        // style={{
-        //     backgroundImage: `url(${Images.ant})`,
-        // }}
         >
             <div className="w-[88%] flex h-auto flex-col space-y-2 md:flex-row justify-evenly md:items-start">
                 <div className="flex flex-col md:w-[25%]   md:justify-center  space-y-1 items-center">

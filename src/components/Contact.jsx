@@ -1,7 +1,7 @@
 import React from "react";
 import { Images } from "../assets/images";
 import axios from "axios";
-
+import { Helmet } from 'react-helmet';
 export default function Contact() {
     const [data, setData] = React.useState({
         name: "",
@@ -38,6 +38,12 @@ export default function Contact() {
                 backgroundImage: `url(${Images.contact})`,
             }}
         >
+            <Helmet>
+                <title>Contact Us | At Ease Pest Control</title>
+                <meta name="description" content="Get in touch with At Ease Pest Control for expert pest management solutions. Contact us today to discuss your needs or schedule a service!" />
+                <meta name="keywords" content="Contact Pest Control, At Ease Pest Control Contact, Schedule Pest Service, Pest Management Help" />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             {/* Left Section - Text and Form */}
             <div className="w-full md:w-1/2 text-start text-white space-y-6">
                 <p className="font-semibold capitalize text-2xl md:text-4xl text-center md:text-start">

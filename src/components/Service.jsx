@@ -1,7 +1,7 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { AiFillSchedule } from 'react-icons/ai';
+import { Helmet } from 'react-helmet';
 import { MdHomeWork, MdFactory, MdPestControl, MdPestControlRodent } from "react-icons/md";
 import { FaBugSlash } from "react-icons/fa6";
 import { Images } from '../assets/images';
@@ -46,10 +46,19 @@ export default function Service() {
     );
     return (
         <>
+            <Helmet>
+                <title>Pest Control Services | At Ease Pest Control</title>
+                <meta
+                    name="description"
+                    content="Explore At Ease Pest Control's comprehensive services, including residential, commercial, termite, rodent, and bed bug control. Eco-friendly and effective solutions tailored to your needs."
+                />
+                <meta
+                    name="keywords"
+                    content="Pest Control Services, Residential Pest Control, Commercial Pest Control, Termite Control, Rodent Control, Bed Bug Treatments, Eco-Friendly Pest Solutions"
+                />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             <div name="service" className="w-full h-auto md:h-screen space-y-1 py-5 flex flex-col  justify-center items-center font-Poppins bg-white">
-                <p className=' font-regular text-[14px] uppercase text-primary text-center md:text-start'>
-                    Our Services
-                </p>
                 <p className=' font-semibold text-xl md:text-4xl text-black text-center'>
                     Explore Our Services
                 </p>

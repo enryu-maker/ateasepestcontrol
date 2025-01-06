@@ -1,7 +1,7 @@
 import React from "react";
 import { Images } from "../assets/images";
 import { Link } from "react-scroll";
-
+import { Helmet } from 'react-helmet';
 export default function Works() {
     return (
         <div
@@ -10,6 +10,18 @@ export default function Works() {
                 backgroundImage: `url(${Images.work})`,
             }}
         >
+            <Helmet>
+                <title>How It Works | At Ease Pest Control</title>
+                <meta
+                    name="description"
+                    content="Learn how At Ease Pest Control works to provide safe and effective pest management solutions. From inspection to follow-up, we ensure your property stays pest-free."
+                />
+                <meta
+                    name="keywords"
+                    content="Pest Control Process, How It Works, Step-by-Step Pest Management, Eco-Friendly Pest Solutions"
+                />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             {/* Section for content */}
             <div className="flex flex-col items-center text-center px-4 space-y-3 md:space-y-4">
                 <p className="text-[10px] sm:text-[12px] md:text-[14px] uppercase font-regular text-primary">

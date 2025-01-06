@@ -1,7 +1,5 @@
 import React from 'react';
-import { Images } from '../assets/images';
-
-// Data array for counties
+import { Helmet } from 'react-helmet';
 const counties = [
     {
         name: 'Washington County',
@@ -65,7 +63,6 @@ const counties = [
         ],
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d870072.3015843914!2d-88.50030253199937!3d31.586727323072058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889acbb92d929c41%3A0xe4f767c8921028cb!2sClarke%20County%2C%20AL%2C%20USA!5e0!3m2!1sen!2sin!4v1736089422187!5m2!1sen!2sin'
     },
-    // Add more counties here with their corresponding map URLs
 ];
 
 export default function Location() {
@@ -74,6 +71,12 @@ export default function Location() {
             name="location"
             className="w-full bg-cover bg-no-repeat flex flex-col py-6 md:py-16 justify-center items-center font-Poppins bg-white"
         >
+            <Helmet>
+                <title>Service Areas | At Ease Pest Control</title>
+                <meta name="description" content="At Ease Pest Control offers eco-friendly pest management solutions across New York City, Brooklyn, Queens, and nearby areas. Contact us to find a location near you!" />
+                <meta name="keywords" content="Pest Control NYC, Pest Control Brooklyn, Pest Control Queens, Local Pest Services, Affordable Pest Control" />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             <div className="text-center mb-8">
                 <p className="font-regular text-[14px] uppercase text-primary">
                     Location

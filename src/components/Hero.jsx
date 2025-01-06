@@ -2,6 +2,7 @@ import React from 'react'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Images } from '../assets/images';
+import { Helmet } from 'react-helmet';
 export default function Hero() {
     const customArrowRight = (onClickHandler, hasNext) => (
         hasNext && (
@@ -29,6 +30,12 @@ export default function Hero() {
         <div
             name="home"
             className=" mt-[70px]">
+            <Helmet>
+                <title>At Ease Pest Control | Professional Pest Management</title>
+                <meta name="description" content="Protect your home or business with At Ease Pest Control. We offer effective, eco-friendly pest solutions to keep your spaces safe and pest-free." />
+                <meta name="keywords" content="Pest Control, Eco-Friendly Pest Solutions, Professional Pest Management" />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             <Carousel
                 showArrows
                 infiniteLoop

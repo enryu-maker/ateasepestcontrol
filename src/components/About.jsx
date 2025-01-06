@@ -7,6 +7,7 @@ import { BiSolidOffer } from "react-icons/bi";
 import { MdPestControl } from "react-icons/md";
 import { Images } from '../assets/images';
 import { Link } from 'react-scroll';
+import { Helmet } from 'react-helmet';
 export default function About() {
     return (
         <div name="about" className="w-full h-auto md:h-screen flex flex-col justify-center items-center space-y-1 py-5 font-Poppins bg-gray-50"
@@ -14,6 +15,12 @@ export default function About() {
                 backgroundImage: `url(${Images.about})`, // Fixed URL formatting
             }}
         >
+            <Helmet>
+                <title>About Us | At Ease Pest Control</title>
+                <meta name="description" content="Welcome to At Ease Pest Control. Discover why we are your trusted partner for eco-friendly pest management solutions. Qualified experts, reliable service, and affordable prices!" />
+                <meta name="keywords" content="Pest Control, Eco-friendly Pest Management, Affordable Pest Solutions, Reliable Pest Control Services, Pest Control Offers" />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             <div className="flex flex-col md:flex-row items-center  space-x-2 relative w-full h-auto md:h-[50vh] justify-center ">
                 <div className="h-full w-full hidden   md:w-[50%] px-10 md:flex justify-center items-center">
                     {/* 3 box differnt size overlatping each other */}
@@ -27,9 +34,6 @@ export default function About() {
                     </div>
                 </div>
                 <div className="h-full  w-screen md:w-[50%] flex flex-col space-y-1 justify-center md:items-start">
-                    <p className=' font-regular text-[14px] uppercase text-primary text-center md:text-start'>
-                        Our Introduction
-                    </p>
                     <p className=' font-semibold text-xl md:text-4xl text-black  text-center md:text-start'>
                         Welcome to <br /> At Ease Pest Control
                     </p>
@@ -47,11 +51,8 @@ export default function About() {
                 </div>
             </div>
             <div className="flex flex-col items-center pt-4 md:mt-0  space-x-2 relative md:h-[50vh] justify-center ">
-                <p className=' font-regular text-[14px] uppercase text-primary text-start md:text-center'>
-                    Why you should choose us?
-                </p>
                 <p className=' font-semibold text-xl md:text-4xl text-black text-center'>
-                    Reason To Choose Us
+                    Why you should choose us?
                 </p>
                 <div className="w-full flex md:flex-row flex-wrap justify-evenly md:justify-center md:space-x-4 pt-4 md:pt-8">
                     {/* Qualified Experts */}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Images } from '../assets/images';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import { Helmet } from 'react-helmet';
 export default function Reviews() {
     const reviews = [
         {
@@ -101,6 +101,12 @@ export default function Reviews() {
                 backgroundImage: `url(${Images.reviews})`, // Fixed URL formatting
             }}
         >
+            <Helmet>
+                <title>Customer Reviews | At Ease Pest Control</title>
+                <meta name="description" content="Read what our satisfied customers say about At Ease Pest Control. We provide top-notch pest management services across NYC and beyond." />
+                <meta name="keywords" content="Customer Reviews, Pest Control Feedback, At Ease Pest Control Testimonials" />
+                <meta name="author" content="At Ease Pest Control" />
+            </Helmet>
             <div className="flex justify-center items-center h-full w-full bg-black/50 text-white font-semibold text-lg">
                 <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
                     <Carousel
