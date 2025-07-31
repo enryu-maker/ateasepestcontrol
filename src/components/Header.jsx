@@ -58,8 +58,8 @@ export default function Header() {
                             <p className=' font-light text-[10px] text-gray-500'>
                                 Email Us Now!
                             </p>
-                            <a href='mailto:office.aepc@gmail' className=' font-medium text-sm'>
-                                office.aepc@gmail
+                            <a href='mailto:office@ateasepestcontrol.com' className=' font-medium text-sm'>
+                                office@ateasepestcontrol.com
                             </a>
                         </div>
                     </div>
@@ -195,8 +195,8 @@ export default function Header() {
                             <p className=' font-light text-[10px] text-gray-500'>
                                 Email Us Now!
                             </p>
-                            <a href='mailto:office.aepc@gmail' className=' font-medium text-sm'>
-                                office.aepc@gmail
+                            <a href='mailto:office@ateasepestcontrol.com' className=' font-medium text-sm'>
+                                office@ateasepestcontrol.com
                             </a>
                         </div>
                     </div>
