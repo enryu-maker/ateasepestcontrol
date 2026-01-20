@@ -71,7 +71,7 @@ const counties = [
         name: 'George County',
         state: 'Mississippi',
         area: [
-            "XYZ",
+            "We’ll be unveiling the location soon.",
         ],
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219182.32529553477!2d-88.81363627150225!3d30.866406113587303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b79f573676607%3A0x6bc0fd0425c40c82!2sGeorge%20County%2C%20MS%2C%20USA!5e0!3m2!1sen!2sin!4v1768812266001!5m2!1sen!2sin"
     },
@@ -79,7 +79,7 @@ const counties = [
         name: 'Greene County',
         state: 'Mississippi',
         area: [
-            "XYZ",
+            "We’ll be unveiling the location soon.",
         ],
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d436756.66803440836!2d-88.96336397847554!3d31.2162556078366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889b67a560648997%3A0x2a68b6b161316623!2sGreene%20County%2C%20MS%2C%20USA!5e0!3m2!1sen!2sin!4v1768812157755!5m2!1sen!2sin"
     },
@@ -87,7 +87,7 @@ const counties = [
         name: 'Wayne County',
         state: 'Mississippi',
         area: [
-            "XYZ",
+            "We’ll be unveiling the location soon.",
         ],
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434678.76195769536!2d-89.02611513225625!3d31.66319423646895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889c9807e390db79%3A0x7636bacd644d3bf7!2sWayne%20County%2C%20MS%2C%20USA!5e0!3m2!1sen!2sin!4v1768812432050!5m2!1sen!2sin"
     },
